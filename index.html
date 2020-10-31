@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website sliding</title>
+	<link rel="stylesheet" type="text/css" href="st.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="navbar">
+			<div class="logo">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSuN57N6X1W0ED5QDaAMHtAUb14modLeuVaFg&usqp=CAU">
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Library</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="user">
+				<p>Geraldine Thomas</p>
+				<img src="https://www.kanpurgifts.com/admin/product_images/chota-bheem-cake.jpg">
+			</div>
+
+			<div class="sidebar">
+				
+				<div class="social-links">
+					<img src="https://icon-library.com/images/search-icon-transparent/search-icon-transparent-7.jpg" class="search-icon">
+
+					<img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.png">
+
+					<img src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-twitter-free-button-png-image-image_1144413.jpg">
+
+					<img src="https://sourcingadda.files.wordpress.com/2016/01/pinterest-logo.png">
+
+				</div>
+
+				<img src="https://cdn.pixabay.com/photo/2013/07/12/14/11/info-147927_640.png" class="info-icon">
+			</div>
+
+			<div class="msg-container">
+				<div id="slider">
+					<div class="msg-col">
+						<h1>The Reasoning</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. </p>
+						<a href="">Learn More</a>
+					</div>
+					<div class="msg-col">
+						<h1>The Knowledge</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. </p>
+						<a href="">Learn More</a>
+					</div>
+					<div class="msg-col">
+						<h1>The Integration</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. </p>
+						<a href="">Learn More</a>
+					</div>
+					<div class="msg-col">
+						<h1>The Learning</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. .</p>
+						<a href="">Learn More</a>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+		<div class="controller">
+				<div id="line1"></div>
+				<div id="line2"></div>
+				<div id="line3"></div>
+				<div id="line4"></div>
+				<div id="active"></div>
+			</div>
+
+
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		var slider = document.getElementById('slider');
+		var active = document.getElementById('active');
+		var line1 = document.getElementById('line1');
+		var line2 = document.getElementById('line2');
+		var line3 = document.getElementById('line3');
+		var line4 = document.getElementById('line4');
+
+		line1.onclick = function(){
+
+			slider.style.transform = 'translateX(0)';
+			active.style.top = '0px';
+		}
+
+		line2.onclick = function(){
+
+			slider.style.transform = 'translateX(-25%)';
+			active.style.top = '80px';
+
+			
+		}
+
+		line3.onclick = function(){
+
+			slider.style.transform = 'translateX(-50%)';
+			active.style.top = '164px';
+
+		}
+
+		line4.onclick = function(){
+
+			slider.style.transform = 'translateX(-75%)';
+			active.style.top = '240px';
+
+		}
+
+
+
+
+	</script>
+
+
+
+</body>
+</html>
